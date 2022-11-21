@@ -1,0 +1,18 @@
+[flake8]
+max-line-length = 120
+
+ignore = S301, S403,
+    WPS237,
+    WPS305, WPS306,
+    WPS410, WPS412,
+    WPS602,
+    D100, D101, D102, D103, D104, D105, D107, D202,
+    DAR202,
+    RST203,
+
+per-file-ignores =
+   tests/*: S101, S311,
+       WPS202, WPS221,
+       WPS432,WPS437, WPS442,
+
+format = ${cyan}%(path)s${reset}:${yellow_bold}%(row)d${reset}:${green_bold}%(col)d${reset}: ${red_bold}%(code)s${reset} %(text)s

@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "more_pathlib"
+version = "0.1.0"
+description = ""
+authors = ["Timur Kasimov <t.kasimov@aventica.ru>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+wemake-python-styleguide = "^0.17.0"
+flake8-colors = "^0.1.9"
+pytest = "^7.2.0"
+mypy = "^0.991"
+autopep8 = "1.6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.autopep8]
+max_line_length = 120
+in-place = true
+recursive = true
+aggressive = 3
+
+[tool.isort]
+line_length = 120
+force_alphabetical_sort_within_sections = true
+include_trailing_comma = true
+use_parentheses = true
+multi_line_output = 3
+force_grid_wrap = 2
+
+[tool.mypy]
+python_version = 3.8
+
+exclude = "tests/*"
+
+disallow_untyped_calls = false
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+allow_untyped_globals = true
+allow_redefinition = true
+
+follow_imports = "skip"
