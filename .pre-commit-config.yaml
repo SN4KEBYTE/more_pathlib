@@ -1,0 +1,32 @@
+repos:
+  - repo: local
+    hooks:
+      - id: isort
+        name: isort
+        entry: isort
+        language: python
+        types: [ python ]
+
+  - repo: local
+    hooks:
+      - id: autopep8
+        name: autopep8
+        entry: autopep8
+        language: python
+        types: [ python ]
+
+  - repo: local
+    hooks:
+      - id: flake8
+        name: flake8
+        entry: flake8
+        language: python
+        types: [ python ]
+
+  - repo: local
+    hooks:
+      - id: mypy
+        name: mypy
+        entry: mypy
+        language: python
+        types: [ python ]
