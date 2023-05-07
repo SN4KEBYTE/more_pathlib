@@ -12,7 +12,7 @@ ignore = S301, S403,
 
 per-file-ignores =
    tests/*: S101, S311,
-       WPS202, WPS221,
+       WPS202, WPS211, WPS221,
        WPS432,WPS437, WPS442,
 
 format = ${cyan}%(path)s${reset}:${yellow_bold}%(row)d${reset}:${green_bold}%(col)d${reset}: ${red_bold}%(code)s${reset} %(text)s
