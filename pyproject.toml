@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "more_pathlib"
-version = "0.1.0"
+version = "0.2.0"
 description = "Extending Python's pathlib with more useful functions."
 authors = ["Timur Kasimov <tkasimov@icloud.com>"]
 
