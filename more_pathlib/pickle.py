@@ -16,7 +16,7 @@ def dump_pickle(
     obj: Any,  # noqa: WPS110
     path: Path,
     *,
-    strict: bool,
+    strict: bool = False,
     **kwargs: Any,
 ) -> None:
     before_dump_hook(
