@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "more_pathlib"
 version = "0.1.0"
-description = ""
-authors = ["Timur Kasimov <t.kasimov@aventica.ru>"]
+description = "Extending Python's pathlib with more useful functions."
+authors = ["Timur Kasimov <tkasimov@icloud.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
