@@ -12,13 +12,13 @@ def dump_json(
     obj: Any,  # noqa: WPS110
     path: Path,
     *,
-    strict: bool = False,
+    validate_parent_dir: bool = False,
     encoding: str = 'utf-8',
     **kwargs: Any,
 ) -> None:
     before_dump_hook(
         path,
-        strict=strict,
+        validate_parent_dir=validate_parent_dir,
     )
 
     with open(path, 'w', encoding=encoding) as out:

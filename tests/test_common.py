@@ -22,7 +22,7 @@ def test_before_dump_strict_no_parent() -> None:
     with pytest.raises(FileNotFoundError):
         before_dump_hook(
             _DUMMY_FILE,
-            strict=True,
+            validate_parent_dir=True,
         )
 
 
@@ -30,14 +30,14 @@ def test_before_dump_strict_parent_is_file() -> None:
     with pytest.raises(ValueError):
         before_dump_hook(
             Path(__file__) / 'file.py',
-            strict=True,
+            validate_parent_dir=True,
         )
 
 
 def test_before_dump_non_strict() -> None:
     before_dump_hook(
         _DUMMY_FILE,
-        strict=False,
+        validate_parent_dir=False,
     )
 
     assert _DUMMY_FILE.parent.exists()
