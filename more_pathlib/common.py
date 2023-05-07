@@ -6,9 +6,9 @@ from more_pathlib.validation import validate_directory
 def before_dump_hook(
     path: Path,
     *,
-    strict: bool,
+    validate_parent_dir: bool,
 ) -> None:
-    if strict:
+    if validate_parent_dir:
         validate_directory(path.parent)
     else:
         path.parent.mkdir(
